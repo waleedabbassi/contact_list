@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "npx nodemon server",
+    "dev": "concurrently \"npm run server\" \"cd client/react-redux-counter && npm start\""
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,8 @@
     "mongoose": "^7.2.4"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "concurrently": "^8.2.0",
+    "nodemon": "^2.0.22",
+    "webpack": "^5.86.0"
   }
 }
